@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+}
+
+@layer base {
+  body {
+    font-family: 'SN Pro', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1f2228;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 20px;
+    }
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom animations */
+@layer components {
+  .fade-in {
+    @apply opacity-0 animate-[fadeIn_0.3s_ease-in_forwards];
+  }
+
+  .slide-up {
+    @apply translate-y-4 opacity-0 animate-[slideUp_0.3s_ease-out_forwards];
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-102;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar - dark theme */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2228;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #1f2228;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page-wrapper,
+.page-container,
+.main-container,
+.wrapper,
+body>div:first-child {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Toastify Customization */
+.Toastify__toast {
+  min-height: 48px !important;
+  padding: 8px 12px !important;
+  font-family: inherit !important;
+}
+
+.Toastify__toast-body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.Toastify__toast-icon {
+  width: 18px !important;
+  margin-inline-end: 8px !important;
+}
+
+.Toastify__close-button {
+  align-self: center !important;
+}

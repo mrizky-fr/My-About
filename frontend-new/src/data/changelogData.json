@@ -1,0 +1,48 @@
+{
+  "en": [
+    {
+      "id": "v2-0-0",
+      "version": "v2.0.0",
+      "date": "2026-03-16",
+      "summary": "This release opens a new flow: DealTech UI can now be used as a full starter or added piece by piece as elements and layouts.",
+      "changes": [
+        "Added the `add` command to copy individual UI elements together with their local dependencies.",
+        "Added the `add-layout` command to install the complete admin layout with supporting CSS files.",
+        "Updated the documentation for the starter, element, and layout flows."
+      ]
+    },
+    {
+      "id": "v1-2-0",
+      "version": "v1.2.0",
+      "date": "2026-03-14",
+      "summary": "This release shifts DealTech UI from a package focused on components into a more ready-to-use starter panel.",
+      "changes": [
+        "Transformed the package from a component-focused setup into a more complete UI panel starter.",
+        "With a single install, users now get the project structure, login page, dashboard, layout, routing, and essential ready-to-use components."
+      ]
+    }
+  ],
+  "id": [
+    {
+      "id": "v2-0-0",
+      "version": "v2.0.0",
+      "date": "2026-03-16",
+      "summary": "Versi ini membuka flow baru: DealTech UI sekarang bisa dipakai sebagai starter penuh atau ditambahkan per element dan layout.",
+      "changes": [
+        "Tambah command `add` untuk menyalin UI element satuan beserta dependency lokalnya.",
+        "Tambah command `add-layout` untuk memasang layout admin lengkap dengan file CSS pendukung.",
+        "Dokumentasi diperbarui untuk flow starter, element, dan layout."
+      ]
+    },
+    {
+      "id": "v1-2-0",
+      "version": "v1.2.0",
+      "date": "2026-03-14",
+      "summary": "Versi ini mengubah DealTech UI dari paket yang fokus ke component menjadi UI panel starter yang lebih siap pakai.",
+      "changes": [
+        "Transformasi dari package yang sebelumnya fokus ke component saja menjadi UI panel starter yang lebih lengkap.",
+        "Sekali install, user langsung mendapatkan struktur project, login page, dashboard, layout, routing, dan komponen dasar siap pakai."
+      ]
+    }
+  ]
+}
