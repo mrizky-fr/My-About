@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /login
-Disallow: /dashboard
 
-Sitemap: https://tech.mudahdeal.com/sitemap.xml
+Sitemap: /sitemap.xml
