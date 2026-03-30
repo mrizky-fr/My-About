@@ -98,7 +98,7 @@ const LandingPage = () => {
 
       {/* Preview Section */}
       <section id="preview" className="pb-10 sm:pb-14 lg:pb-16">
-        <div className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-[0_12px_36px_rgba(0,0,0,0.3)] backdrop-blur">
+        <div className="overflow-hidden rounded-lg">
           <img
             src={previewImage}
             alt="Project preview"
